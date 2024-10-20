@@ -1,0 +1,138 @@
+/* appoint.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('image.jpg'); 
+background-size: cover;
+background-position: center;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+
+}
+.appointment-form-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #3333338a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+}
+.appointment-form-container  h2{
+  color: white;
+
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+/* Two-column layout */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+/* Ensure the submit button spans two columns */
+button.submit-btn {
+  grid-column: 1 / span 2;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 100px;
+}
+
+button.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #007bff;
+}
+
+
+input[type="date"],
+input[type="time"] {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3); 
+}
+
+textarea {
+  height: 120px;
+}
+
+/* Dialog box styles */
+.dialog-box {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #e0ffe0;
+  color: rgb(66, 66, 66);
+  border: 1px solid rgba(52, 52, 52, 0.211);
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Dialog box buttons */
+.dialog-box button {
+  margin-top: 10px;
+  margin-left: 100px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dialog-box button:hover {
+  background-color: #0056b3;
+}
+
+/* Back button in dialog box */
+button.back-btn {
+  background-color: #4d59ff;
+  color: white;
+  margin-left: 10px;
+}
+
+button.back-btn:hover {
+  background-color: #4d59ff;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  button.submit-btn {
+    grid-column: 1/span1;
+}
+}

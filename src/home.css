@@ -1,0 +1,105 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('image.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  }
+  
+  .home {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    margin-top: 5px;
+    margin-right: 10px;
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+  }
+  
+  /* Logo styles on the left */
+  .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #007BFF;
+  }
+  
+  /* Navigation links on the right */
+  .nav-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .nav-button {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #007BFF;
+    transform: scale(1.02);
+  }
+  
+  .nav-button:hover {
+    background-color: #007BFF;
+  }
+  /* Centered main content */
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+  
+  /* Welcome message */
+  .welcome-message {
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #ffffff;
+  }
+  
+  /* Book appointment button */
+  .appointment-btn {
+    margin-right: 10px;
+    background-color: #007BFF;
+    border: none;
+    padding: 20px 80px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .appointment-btn .link-btn {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  button.appointment-btn:hover {
+    background-color: #007BFF;
+    transform: scale(1.02);
+  }
+
+  
